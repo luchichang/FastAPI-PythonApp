@@ -26,3 +26,13 @@ now run the command to installs the required packages and dependencies
    ```
       pip install -r requirements.txt
    ```     
+
+once completed run the application locally using 
+   ```
+       uvicorn main:app --reload
+   ```
+🥳 congrats!! now app is runing in your locall machine. you can access it in your local browser by entering your <private IP>:8000 
+
+ * for running in public ip, type
+     uvicorn main:app --reload --host 0.0.0.0   --port <your desired Port No>
+  now all the internet community can access the app
