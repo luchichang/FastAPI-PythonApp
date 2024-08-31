@@ -45,6 +45,6 @@ once completed run the application locally using
   after clicking the submit button
    <a> ![image](https://github.com/user-attachments/assets/a19590ed-945f-4bbb-8aba-42b3a705ef4a)  </a>
 
-   once Completed, type **deactivate ** command to exit the virtual environment
+   once Completed, type **deactivate** command to exit the virtual environment
    press  ctrl+c to kill the Process.
 
