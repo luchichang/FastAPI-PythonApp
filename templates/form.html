@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple FastAPI Form</title>
+</head>
+<body>
+    <h1>Enter Your Details</h1>
+    <form method="post" action="/submit/">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if name and age %}
+        <h2>Submitted Data:</h2>
+        <p>Name: {{ name }}</p>
+        <p>Age: {{ age }}</p>
+    {% endif %}
+</body>
+</html>
+
