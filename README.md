@@ -6,8 +6,9 @@
 
 ## Steps to Locally run the App
 * set up the Environment,
+
  install the python 
-    bash```
+    ```
        sudo apt update -y 
        sudo apt install python3 -y
     ```
