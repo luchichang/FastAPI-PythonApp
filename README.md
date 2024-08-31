@@ -34,5 +34,8 @@ once completed run the application locally using
 🥳 congrats!! now app is runing in your locall machine. you can access it in your local browser by entering your <private IP>:8000 
 
  * for running in public ip, type
-     uvicorn main:app --reload --host 0.0.0.0   --port <your desired Port No>
+    ```
+        uvicorn main:app --reload --host 0.0.0.0   --port <your desired Port No>
+    ```
+    
   now all the internet community can access the app
