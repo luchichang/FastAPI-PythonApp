@@ -13,4 +13,4 @@
        sudo apt install python3 -y
     ```
   #### note:
-  *Eliminate the Sudo if you run as a root User. *
+  * Eliminate the Sudo if you run as a root User.*
