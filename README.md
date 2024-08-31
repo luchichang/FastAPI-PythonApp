@@ -5,9 +5,8 @@
      and once the user press the submit button the values send to the server via ** HTTP Post ** Method.
 
 ## Steps to Locally run the App
-
-    * set up the Environment
-       * install the python 
+       set up the Environment
+ install the python 
     ```
        sudo apt update -y 
        sudo apt install python3 -y
