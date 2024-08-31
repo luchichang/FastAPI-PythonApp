@@ -13,4 +13,16 @@
        sudo apt install python3 -y
     ```
   #### note:
-  * Eliminate the Sudo if you run as a root User.*
+   _Eliminate the Sudo if you run as a root User._
+
+ move to the project directory and run the below command to create the virtual Environment
+
+    ``` 
+      python3 -m venv myenv
+      source myenv/bin/activate
+        
+    ```
+now run the command to installs the required packages and dependencies
+   ```
+      pip install -r requirements.txt
+   ```     
