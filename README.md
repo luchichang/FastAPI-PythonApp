@@ -49,19 +49,29 @@ once completed run the application locally using
    press  ctrl+c to kill the Process.
 
 ## Steps for Containerised way
- * install the docker client and docker daemon
+ * install the docker client and docker daemon <br>
+ 
            sudo apt update -y  && sudo apt install docker.io -y
- * for adding more security or preventing root account from vulnerability. add the docker group to the user so, that user can send request to the docker daemon within the user space.
+ 
+ * for adding more security or preventing root account from vulnerability. add the docker group to the user so, that user can send request to the docker daemon within the user space. <br>
+ 
            sudo usermod -aG docker <user_Name>
- *now either build the docker image with the docker file or pull the image from the repository
+ 
+ * now either build the docker image with the docker file or pull the image from the repository <br>
+
            docker build -t python-app-img .
+   
     or <br>
+
            docker pull dinesht0006/python-app
+ 
  * Image will be pulled from the container registry, you can verify it using
+ 
            docker images <br>
-     (the newly pulled image will be listed)
+    (the newly pulled image will be listed)
  * Run  the image into a container
-            docker run --name python-app-con -itd -p 8000:8000
+
+           docker run --name python-app-con -itd -p 8000:8000
 
 now application is running without installing or changing the dependencies. That's the Docker way 😉 🆒!
 
