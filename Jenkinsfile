@@ -21,7 +21,7 @@ pipeline{
          sh 'docker tag py-image:latest dinesht0006/python-app:${BUILD_NUMBER}'
       }
     }
-    stage('push the image){
+    stage('push the image'){
       when{
         branch 'main'
       }
