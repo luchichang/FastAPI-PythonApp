@@ -9,7 +9,7 @@ WORKDIR /usr/local/app
 COPY . .
 
 # creating the user 
-RUN useradd -m -d /usr/local/app app && chown -R app:app /usr/local/app
+RUN useradd  -d /usr/local/app app && chown -R app:app /usr/local/app
 
 #running the succeding commands as the mentioned user
 USER app
@@ -19,7 +19,8 @@ USER app
 
 #installing the dependencies in the container 
 
-RUN   python3 -m venv myenv  && myenv/bin/pip install -r requirements.txt 
+#here we are calling run command and venv at a single run line since each RuN executes in a single  shell
+RUN   python3 -m venv myenv  && myenv/bin/pip install --no-cache-dir -r requirements.txt 
 
 #Exposing the container in posrt 8000
 EXPOSE 8000
