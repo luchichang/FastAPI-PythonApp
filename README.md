@@ -75,3 +75,4 @@ once completed run the application locally using
 
 now application is running without installing or changing the dependencies. That's the Docker way 😉 🆒!
 
+Star the Repository
