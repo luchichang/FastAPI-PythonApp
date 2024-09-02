@@ -9,7 +9,10 @@ pipeline{
       when{
         branch 'main'
       }
-      git branch: 'main', url: 'https://github.com/luchichang/FastAPI-PythonApp.git'
+      steps{
+         git branch: 'main', url: 'https://github.com/luchichang/FastAPI-PythonApp.git'
+      }
+      
     }
     stage('build the docker'){
       when{
